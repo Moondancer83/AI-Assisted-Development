@@ -19,6 +19,7 @@ Proportional business analysis
 - For a new feature or high uncertainty, explore goals, the current workflow, alternatives, scope and non-goals, and relevant permissions, concurrency, recovery, and compatibility expectations. Cover what affects decisions rather than an exhaustive checklist.
 - Research facts in available sources, documentation, and code within role boundaries before asking the user. Challenge solution premises and propose concrete business scenarios and recommendations. Use targeted interviewing or an applicable grilling skill when available for consequential unresolved decisions, routed through the director. Skill use does not authorize architecture design, new artifacts, or document writes.
 - Stop analysis when the next increment has clear acceptance examples and its material assumptions are resolved. Revisit affected analysis when new evidence changes those assumptions; route consequential decisions through the director and continue independent assigned work.
+- For stateful or recovery behavior, use one concrete before/action/after example, including partial failure where relevant. Identify the authoritative state being restored and existing behavior that must remain. Present unresolved interpretations before treating one as a requirement.
 
 Inputs
 - Use the director's objective, approved scope, business context, stakeholder evidence,

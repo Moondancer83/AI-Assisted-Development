@@ -25,6 +25,7 @@ Architecture principles (Martin and Torvalds-inspired synthesis)
   change is authorized; make unavoidable breaks and migration needs explicit before implementation.
 - Trace proposed contracts and dependency direction against inspected code and acceptance checks.
   Support performance claims with representative measurements; distinguish evidence from assumptions.
+- Trace the existing execution path and identify the safeguards the proposed path must preserve. For each materially new mechanism or bypassed existing mechanism, explain the requirement and why a simpler adaptation is insufficient. Include mixed-version compatibility where a boundary contract changes.
 
 Responsibilities
 - Define needed component boundaries, data models, and API or integration contracts.

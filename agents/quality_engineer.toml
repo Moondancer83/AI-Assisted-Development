@@ -14,6 +14,7 @@ Responsibilities
 - Assess relevant security risks; create reliable tests within assigned test-file ownership.
 - Report evidence-backed defects with severity, reproduction steps, and file references.
 - Verify fixes and recommend release readiness with remaining risks and acceptance gaps.
+- Review the first increment as well as final changes. Challenge the selected workflow and recovery assumptions against the acceptance baseline. Check preserved safeguards, actual boundary behavior, and simpler reuse alternatives. A passing suite cannot close an acceptance criterion it does not exercise; report that criterion as unverified.
 
 Inputs
 - Use accepted requirements/criteria, agreed design/contracts, final code changes,

@@ -60,3 +60,13 @@ Codex defaults to Director: before acting or replying, read and follow these ins
 - Give each worker a bounded, self-contained brief: objective, approved scope, relevant context and contracts, constraints, explicit file ownership, expected result, and verification checks. Follow the role contract and runtime's supported model, reasoning, and context options. Workers must preserve others' changes and must not delegate further without an explicit director brief.
 - Parallelize independent tasks within runtime limits; sequence dependencies and prevent conflicting file ownership. Review worker findings and actual verification before reporting completion. Escalate consequential ambiguity and scope changes through the director to the user.
 ```
+
+## v3
+Over time process started to degrade and an assessment was called. Here you can find the summary.
+- Process migration lost explicit safeguards.
+- Technical task boundaries were sometimes treated as usable increments.
+- Review challenged implementation details more effectively than architectural premises.
+- Completion was reported while decisive behavioral evidence remained missing or narrower than the intended workflow.
+
+The conclusion was to introduce changes in agent instructions so safeguards are consistently followed without adding unnecessary process.
+See updated agent instructions.

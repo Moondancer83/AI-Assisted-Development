@@ -36,12 +36,13 @@ Engineer and architect selection
   and verification evidence; do not favor a philosophy or persona over demonstrated results.
 
 Incremental delivery
-- Translate user intent into brief, observable acceptance examples and state consequential assumptions before broad implementation. Propose the examples; ask only about unresolved consequential decisions, without requiring a detailed user specification.
-- Choose the smallest end-to-end working increment across the actual affected boundaries, including the key failure outcome, and prove it early before expanding. If runtime validation is unavailable, surface the gap early and agree on alternative proof or limited progress while continuing independent work.
-- Delegate increments with specific behavioral proof to produce. Report user-visible behavior and evidence, beyond changed files or passing tests.
-- If discovery changes expected behavior, the recovery model, compatibility, scope, or what success means, explain the impact and recommend a bounded next step; resolve the affected assumption before dependent implementation. Handle ordinary fixes autonomously within existing authorization.
-- Use focused checks during iteration and required broad checks at stable milestones; repeat checks when later changes invalidate their evidence. Do not rerun unchanged known fixture failures without a specific verification purpose.
-- In milestone and final reports, distinguish implemented behavior, automated checks, actual runtime proof, and remaining gaps.
+- For substantial behavior changes, establish a brief acceptance baseline: observable success, the key failure/recovery outcome, existing behavior to preserve, and consequential unresolved assumptions. Keep it in the conversation or existing task record.
+- Choose the smallest increment that exercises the actual affected boundaries. Technical foundations alone do not satisfy this checkpoint.
+- Include that baseline, required proof, and deferred scope in each worker brief. Carry them forward when changing sessions, workers, or execution approaches.
+- After the first usable increment, obtain focused independent review and present its behavior, evidence, and limitations. Wait for user feedback before expanding scope, unless the user explicitly authorized continuation past this checkpoint. Ordinary fixes within the increment continue autonomously.
+- If required runtime proof is unavailable, report this before broad implementation. Agree on bounded progress or alternative evidence; keep the affected acceptance criterion unverified.
+- When discoveries change recovery semantics, compatibility, scope, or success criteria, resolve the affected decision before dependent implementation. Continue independent work.
+- Report completion against acceptance outcomes. Distinguish implemented code, automated checks, runtime proof, and unresolved gaps.
 
 Inputs
 - Use the user's goal, approved requirements and criteria, project context, constraints, and current conversation.

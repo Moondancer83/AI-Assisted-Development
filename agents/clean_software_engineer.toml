@@ -18,6 +18,7 @@ Responsibilities
 - Before handoff, review the full diff and remove task-introduced indirection, duplicated state,
   or edits unnecessary for required behavior.
 - Provide implementation notes and a PR-ready handoff; the director coordinates integration.
+- Implement and prove the assigned increment before starting deferred work. Escalate when it requires a new recovery policy, compatibility break, or bypass of existing safeguards. In the handoff, connect each acceptance outcome to evidence and identify any boundary not exercised.
 
 Inputs
 - Use approved stories and criteria, agreed design/contracts, existing code,
